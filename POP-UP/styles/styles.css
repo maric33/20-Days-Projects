@@ -11,54 +11,54 @@ body {
     justify-content: center;
     font-family: sans-serif;
     height: 100vh;
-    background-color: #F7E1D7;
+    background-image: url("https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
-.button {
+.buttonOpen {
     position: relative;
     padding: 15px 20px;
-    font-size: 1.5rem;
-    background-color: #EDAFB8;
+    font-size: 1.2rem;
+    background-color: #ffffffb6;
     display: inline-block;
     text-decoration: none;
     color: #4A5759;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 50px;
     transition: 0.2s;
 }
 
-.button:hover {
-    transform: scale(1.2);
+.buttonOpen:hover {
+    transform: scale(1.08);
     box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.295);
+    border: 2px solid #4A5759;
 }
 
+
+
 #newsLetter {
-    display: flex;
-    flex-direction: column;
     position: fixed;
     align-items: center;
-    /*top: -100%;
-    left: 50%;*/
-    transform: translate(-50%1 -50%);
-    background-color: #B0C4B1;
-    z-index: 1000;
+    transform: translate(-50% -50%);
+    background-color: #ffffff;
+    z-index: 2;
     width: 450px;
-    height: auto;
     padding: 80px 50px 50px;
     border-radius: 4px;
-    /*visibility: hidden;*/
+    visibility: hidden;
     box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.295);
+    
 
 }
 
 #newsLetter.active {
     visibility: visible;
-    top: 50%;
+    
+    
 }
 
 #newsLetter h2 {
     text-align: center;
-    color: #4A5759;
+    color: #323637;
     font-size: 24px;
     margin: 20px 10px;
 }
@@ -68,7 +68,7 @@ body {
     margin: 20px 10px;
     line-height: 17px;
     letter-spacing: 0.5px;
-    color: #4A5759;
+    color: #858585;
 }
 
 .box {
@@ -80,8 +80,9 @@ body {
 }
 
 #newsLetter input {
-    background-color: #839484;
-    border: none;
+    background-color: #dbd9d9;
+    color: #dddddd;
+    border: 2px solid #4A5759;
     outline: none;
     height: 40px;
     width: 100%;
@@ -92,7 +93,7 @@ body {
 }
 
 #newsLetter input:focus {
-    background-color: #c3dac4;
+    background-color: #f1f1f1;
     color: #4A5759;
     border: 2px solid #4A5759;
 }
@@ -101,7 +102,7 @@ body {
     margin: 10px;
     height: 30px;
     width: 100%;
-    background-color: #EDAFB8;
+    background-color: #ffffff;
     color: #4A5759;
     border: none;
     outline: none;
@@ -122,11 +123,11 @@ body {
     top: 10px;
     right: 20px;
     cursor: pointer;
-    transition: 0.2s;
-    color: #EDAFB8;
+    transition: 0.5s;
+    color: #b2b2b2;
 }
 
 .close:hover {
-    transform: rotate(90deg);
+    transform: rotate(19deg);
 
 }
