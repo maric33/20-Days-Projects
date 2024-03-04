@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #F7E1D7;
+}
+
+.button {
+    position: relative;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    background-color: #EDAFB8;
+    display: inline-block;
+    text-decoration: none;
+    color: #4A5759;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.295);
+}
+
+#newsLetter {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    /*top: -100%;
+    left: 50%;*/
+    transform: translate(-50%1 -50%);
+    background-color: #B0C4B1;
+    z-index: 1000;
+    width: 450px;
+    height: auto;
+    padding: 80px 50px 50px;
+    border-radius: 4px;
+    /*visibility: hidden;*/
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.295);
+
+}
+
+#newsLetter.active {
+    visibility: visible;
+    top: 50%;
+}
+
+#newsLetter h2 {
+    text-align: center;
+    color: #4A5759;
+    font-size: 24px;
+    margin: 20px 10px;
+}
+
+#newsLetter p {
+    text-align: center;
+    margin: 20px 10px;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+    color: #4A5759;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsLetter input {
+    background-color: #839484;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px 20px;
+
+}
+
+#newsLetter input:focus {
+    background-color: #c3dac4;
+    color: #4A5759;
+    border: 2px solid #4A5759;
+}
+
+#newsLetter button {
+    margin: 10px;
+    height: 30px;
+    width: 100%;
+    background-color: #EDAFB8;
+    color: #4A5759;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.295);
+    transition: 0.2s;
+
+}
+
+#newsLetter button:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.295);
+    transition: 0.2s;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #EDAFB8;
+}
+
+.close:hover {
+    transform: rotate(90deg);
+
+}
