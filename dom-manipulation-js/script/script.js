@@ -18,3 +18,11 @@ const divNew = document.createElement('div');
 divNew.style.border = '2px solid black';
 divNew.style.backgroundColor = 'pink';
 divMain.append(divNew);
+
+const header1 = document.createElement('h1');
+header1.textContent = "I'm in a div";
+divNew.append(header1);
+
+const pSecond = document.createElement('p');
+pSecond.textContent = 'ME TOO!';
+divNew.append(pSecond);
